@@ -1,0 +1,18 @@
+<form>
+    <div>
+        <span>
+            id
+        </span>
+        <input type="text" name="eid" ngModel/>
+    </div>
+    <div>
+        <span>
+            Ename
+        </span>
+        <input type="text" name="ename" ngModel/>
+    </div>
+    <input type="submit" value="Add Employee"/>
+</form>
+<div *ngIf="createdFlag;">
+    createdFlag:{{createdEmployee.id}}{{createdEmployee.name}}
+</div>
